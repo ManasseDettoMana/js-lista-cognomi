@@ -4,6 +4,10 @@ var nuovoCognome = prompt("Cognome: ");
 
 listaCognomi.push(nuovoCognome);
 
+for(let i=0;i<listaCognomi.length;i++){
+    listaCognomi[i]=listaCognomi[i].charAt().toUpperCase() + listaCognomi[i].slice(1);
+}
+
 listaCognomi.sort();
 let a=document.getElementsByClassName("cognome");
 
